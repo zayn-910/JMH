@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | JMH</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">JOY<span class="dot">Makers</span><span class="dot">Holiday</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="testimonials.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-primary btn-sm"><span>Plan My Trip</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></div>
+  </nav>
+</header>
+<main id="main">
+  <section class="page-banner">
+    <div class="container">
+      <h1 style="font-size:2.2rem;">Privacy Policy</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Privacy Policy</p>
+    </div>
+  </section>
+  <section class="section" style="max-width:800px;margin:0 auto;">
+    <div class="container">
+      <p class="muted">Last updated: <span id="pp-date"></span></p>
+      <h3>1. What we collect</h3>
+      <p>When you submit an inquiry form on this site, we collect your name, phone number, email address, preferred travel dates, number of travelers, and any message you provide. We do not collect payment details through this site.</p>
+      <h3>2. How we use it</h3>
+      <p>Your information is used solely to respond to your travel inquiry, follow up with relevant package information, and — if you opt in — send occasional updates about offers. We do not sell or rent your data to third parties.</p>
+      <h3>3. Storage & security</h3>
+      <p>Inquiry data is stored in our secured database and is only accessible to authorized JOY Makers staff via a password-protected admin panel. We use industry-standard measures including HTTPS encryption and rate-limited forms to protect submissions.</p>
+      <h3>4. Your rights</h3>
+      <p>You can request access to, correction of, or deletion of your personal data at any time by emailing <a href="mailto:Joymakersholidays@gmail.com" style="text-decoration:underline;">Joymakersholidays@gmail.com</a>.</p>
+      <h3>5. Cookies</h3>
+      <p>This site may use minimal cookies for basic functionality. We do not use third-party advertising trackers.</p>
+      <h3>6. Contact</h3>
+      <p>Questions about this policy can be directed to Joymakersholidays@gmail.com.</p>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-bottom">
+  <span>© <span id="footer-year"></span> JOY Makers Holiday. All rights reserved.</span>
+  <a href="index.html" style="color:rgba(255,255,255,.7);">Back to Home</a>
+</div></div></footer>
+<script src="js/main.js"></script>
+<script>document.getElementById("pp-date").textContent = new Date().toLocaleDateString("en-IN",{day:"numeric",month:"long",year:"numeric"});</script>
+</body>
+</html>

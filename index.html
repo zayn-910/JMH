@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JMH | Handcrafted Trips, Honest Prices</title>
+<meta name="description" content="Wanderline Travel plans handcrafted holiday packages to Bali, Switzerland, Kerala, Dubai, the Himalayas and Paris — with a local expert on call from booking to return.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">JOY<span class="dot">Makers</span><span class="dot">Holiday</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="testimonials.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary btn-sm"><span>Plan My Trip</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Handcrafted itineraries since 2024</p>
+          <h1>Trips planned around&nbsp;how you actually want to travel.</h1>
+          <p class="lede">No templated tours. Every itinerary on Wanderline is built by a destination specialist and backed by a real person on WhatsApp, from the day you enquire to the day you land home.</p>
+          <div class="hero-actions">
+            <a href="destinations.html" class="btn btn-primary">Browse Packages</a>
+            <a href="contact.html" class="btn btn-outline">Talk to an Expert</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>1240+</strong><span>Travelers guided</span></div>
+            <div><strong>14</strong><span>Countries covered</span></div>
+            <div><strong>4.8/5</strong><span>Average rating</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?q=80&w=1000" alt="Traveler overlooking the Swiss Alps">
+          <div class="route-tag"><span>INTERLAKEN → ZERMATT</span><span>8 DAYS</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="quick-search">
+      <div class="field" style="margin:0;">
+        <label for="qs-search">Where do you want to go?</label>
+        <input type="text" id="qs-search" placeholder="Try 'Bali' or 'Switzerland'">
+      </div>
+      <div class="field" style="margin:0;">
+        <label for="qs-type">Trip type</label>
+        <select id="qs-type">
+          <option value="">Any type</option>
+          <option value="Beach">Beach</option>
+          <option value="Adventure">Adventure</option>
+          <option value="City">City</option>
+          <option value="Nature">Nature</option>
+        </select>
+      </div>
+      <div class="field" style="margin:0;">
+        <label for="qs-budget">Budget</label>
+        <select id="qs-budget">
+          <option value="">Any budget</option>
+          <option value="0-30000">Under ₹30,000</option>
+          <option value="30000-70000">₹30,000 – ₹70,000</option>
+          <option value="70000-999999">₹70,000+</option>
+        </select>
+      </div>
+      <button class="btn btn-primary" id="qs-go">Search Trips</button>
+    </div>
+  </div>
+
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Featured routes</p>
+        <h2>Where travelers are going this season</h2>
+      </div>
+      <div class="grid-3" id="featured-grid"></div>
+      <div class="text-center" style="margin-top:38px;">
+        <a href="destinations.html" class="btn btn-outline on-light">See All Destinations</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Why JOY Makers</p>
+        <h2>Booking a trip shouldn't feel like a leap of faith.</h2>
+      </div>
+      <div class="usp-grid">
+        <div class="usp-card" style="background:transparent;border-color:rgba(255,255,255,.15);">
+          <span class="num">01</span>
+          <h3>Real Local Guides</h3>
+          <p class="muted" style="color:rgba(255,255,255,.65);">Every itinerary is run by someone who has personally walked the route — not a franchise script.</p>
+        </div>
+        <div class="usp-card" style="background:transparent;border-color:rgba(255,255,255,.15);">
+          <span class="num">02</span>
+          <h3>Transparent Pricing</h3>
+          <p class="muted" style="color:rgba(255,255,255,.65);">Inclusions and exclusions are listed on every package page — no surprise add-ons at checkout.</p>
+        </div>
+        <div class="usp-card" style="background:transparent;border-color:rgba(255,255,255,.15);">
+          <span class="num">03</span>
+          <h3>24/7 On-Trip Support</h3>
+          <p class="muted" style="color:rgba(255,255,255,.65);">A WhatsApp line to your trip coordinator stays open for the entire duration of your travel.</p>
+        </div>
+        <div class="usp-card" style="background:transparent;border-color:rgba(255,255,255,.15);">
+          <span class="num">04</span>
+          <h3>Flexible Rebooking</h3>
+          <p class="muted" style="color:rgba(255,255,255,.65);">Plans change — we help you reschedule dates on most packages without punitive fees.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">From recent travelers</p>
+        <h2>What it's like to travel with us</h2>
+      </div>
+      <div class="grid-3" id="home-testimonials"></div>
+      <div class="text-center" style="margin-top:34px;">
+        <a href="testimonials.html" class="btn btn-outline on-light">Read All Reviews</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--teal">
+    <div class="container text-center">
+      <h2>Tell us where you'd like to go — we'll build the itinerary.</h2>
+      <p style="max-width:520px;margin:0 auto 28px;color:rgba(255,255,255,.82);">Free consultation, no obligation. Most travelers hear back from a destination specialist within a few hours.</p>
+      <a href="contact.html" class="btn btn-primary">Start Planning</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo" style="color:#fff;">JOY<span class="dot">Makers</span><span class="dot">Holiday</span></a>
+        <p class="muted" style="margin-top:14px;color:rgba(255,255,255,.6);max-width:280px;">Handcrafted holiday packages with a real destination expert behind every itinerary.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="destinations.html">Destinations</a>
+        <a href="blog.html">Blog</a>
+        <a href="testimonials.html">Reviews</a>
+        <a href="about.html">About Us</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <a href="tel:+919071714747">+91 9071714747</a>
+        <a href="mailto:Joymakersholidays@gmail.com">Joymakersholidays@gmail.com</a>
+        <a href="https://wa.me/919071714747" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year"></span> JOY Makers Holiday. All rights reserved.</span>
+      <span>Made for travelers, not tourists.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox"><button class="lightbox-close">&times;</button><img id="lightbox-img" alt=""></div>
+
+<script src="js/packages-data.js"></script>
+<script src="js/content-data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    renderCardsInto(document.getElementById("featured-grid"), PACKAGES.slice(0,3));
+
+    const testiWrap = document.getElementById("home-testimonials");
+    testiWrap.innerHTML = TESTIMONIALS.slice(0,3).map(t => `
+      <div class="quote-card">
+        <div class="stars">${"★".repeat(t.rating)}${"☆".repeat(5-t.rating)}</div>
+        <p>"${t.quote}"</p>
+        <div class="quote-by">
+          <img src="${t.img}" alt="${t.name}">
+          <div><strong>${t.name}</strong><span>${t.trip}</span></div>
+        </div>
+      </div>`).join("");
+
+    document.getElementById("qs-go").addEventListener("click", () => {
+      const q = document.getElementById("qs-search").value;
+      const type = document.getElementById("qs-type").value;
+      const params = new URLSearchParams();
+      if (q) params.set("q", q);
+      if (type) params.set("type", type);
+      location.href = "destinations.html" + (params.toString() ? "?" + params.toString() : "");
+    });
+  });
+</script>
+</body>
+</html>

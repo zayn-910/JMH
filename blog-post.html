@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Post | JMH</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">JOY<span class="dot">Makers</span><span class="dot">Holiday</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="testimonials.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary btn-sm"><span>Plan My Trip</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="page-banner">
+    <div class="container">
+      <p class="eyebrow" id="post-category">Guide</p>
+      <h1 id="post-title" style="font-size:2.4rem;max-width:800px;"></h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / <a href="blog.html">Blog</a> / <span id="post-title-crumb"></span></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width:800px;">
+      <img id="post-img" src="" alt="" style="border-radius:6px;margin-bottom:30px;aspect-ratio:16/9;object-fit:cover;">
+      <p class="muted" id="post-date" style="margin-bottom:26px;"></p>
+      <div id="post-body" style="font-size:1.05rem;"></div>
+
+      <div class="route-divider"><span class="node"></span><span class="dashes"></span><span class="node"></span></div>
+      <p class="muted">Want an itinerary built around this? <a href="contact.html" style="text-decoration:underline;color:var(--ink);">Talk to a destination specialist</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© <span id="footer-year"></span> JOY Makers Holiday. All rights reserved.</span>
+      <a href="blog.html" style="color:rgba(255,255,255,.7);">Back to Blog</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/content-data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const slug = new URLSearchParams(location.search).get("slug");
+    const post = BLOG_POSTS.find(p => p.slug === slug) || BLOG_POSTS[0];
+    document.title = `${post.title} | Wanderline Travel`;
+    document.getElementById("post-category").textContent = post.category;
+    document.getElementById("post-title").textContent = post.title;
+    document.getElementById("post-title-crumb").textContent = post.title;
+    document.getElementById("post-img").src = post.img;
+    document.getElementById("post-img").alt = post.title;
+    document.getElementById("post-date").textContent = new Date(post.date).toLocaleDateString("en-IN",{day:"numeric",month:"long",year:"numeric"});
+    // NOTE: replace this excerpt-only placeholder with full article HTML per post
+    // when real content is written — kept intentionally short here as a stand-in.
+    document.getElementById("post-body").innerHTML = `<p>${post.excerpt}</p>
+      <p>This article is a placeholder — swap in the full write-up for "${post.title}" here. Structure long-form posts with h2 subheadings, since this template's typography is already styled for them.</p>`;
+  });
+</script>
+</body>
+</html>

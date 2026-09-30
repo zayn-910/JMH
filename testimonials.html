@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonials & Reviews | JMH</title>
+<meta name="description" content="Read what travelers say about their trips with JOY Makers Holiday.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">JOY<span class="dot">Makers</span><span class="dot">Holiday</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="testimonials.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary btn-sm"><span>Plan My Trip</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="page-banner">
+    <div class="container">
+      <p class="eyebrow">1240+ travelers guided</p>
+      <h1 style="font-size:2.6rem;">Testimonials & Reviews</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Reviews</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="testi-grid" id="testi-grid"></div>
+    </div>
+  </section>
+
+  <section class="section section--teal">
+    <div class="container text-center">
+      <h2>Just got back from a JOY Makers trip?</h2>
+      <p style="max-width:520px;margin:0 auto 28px;color:rgba(255,255,255,.82);">We'd love to hear how it went — and feature your story here.</p>
+      <a href="contact.html" class="btn btn-primary">Share Your Story</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo" style="color:#fff;">JOY<span class="dot">Makers</span><span class="dot">Holiday</span></a>
+        <p class="muted" style="margin-top:14px;color:rgba(255,255,255,.6);max-width:280px;">Handcrafted holiday packages with a real destination expert behind every itinerary.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="destinations.html">Destinations</a>
+        <a href="blog.html">Blog</a>
+        <a href="testimonials.html">Reviews</a>
+        <a href="about.html">About Us</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <a href="tel:+919071714747">+91 9071714747</a>
+        <a href="mailto:Joymakersholidays@gmail.com">Joymakersholidays@gmail.com</a>
+        <a href="https://wa.me/919071714747" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year"></span> JOY Makers Holiday. All rights reserved.</span>
+      <span>Made for travelers, not tourists.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/content-data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("testi-grid").innerHTML = TESTIMONIALS.map(t => `
+      <div class="quote-card">
+        <div class="stars">${"★".repeat(t.rating)}${"☆".repeat(5-t.rating)}</div>
+        <p>"${t.quote}"</p>
+        <div class="quote-by">
+          <img src="${t.img}" alt="${t.name}">
+          <div><strong>${t.name}</strong><span>${t.trip}</span></div>
+        </div>
+      </div>`).join("");
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service | JMH</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">JOY<span class="dot">Makers</span><span class="dot">Holiday</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="testimonials.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-primary btn-sm"><span>Plan My Trip</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></div>
+  </nav>
+</header>
+<main id="main">
+  <section class="page-banner">
+    <div class="container">
+      <h1 style="font-size:2.2rem;">Terms of Service</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Terms of Service</p>
+    </div>
+  </section>
+  <section class="section" style="max-width:800px;margin:0 auto;">
+    <div class="container">
+      <p class="muted">Last updated: <span id="tos-date"></span></p>
+      <h3>1. Inquiries, not bookings</h3>
+      <p>Submitting an inquiry form on this site does not constitute a confirmed booking. All bookings are confirmed separately in writing after payment terms are agreed.</p>
+      <h3>2. Pricing</h3>
+      <p>Prices shown are indicative per-person estimates and are subject to change based on season, availability, and final itinerary customization.</p>
+      <h3>3. Cancellations & changes</h3>
+      <p>Cancellation and rescheduling terms vary by package and are shared in writing at the time of booking confirmation.</p>
+      <h3>4. Website use</h3>
+      <p>Content on this site is for informational purposes. Please do not copy or redistribute package content without permission.</p>
+      <h3>5. Contact</h3>
+      <p>Questions about these terms can be directed to Joymakersholidays@gmail.com.</p>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-bottom">
+  <span>© <span id="footer-year"></span> JOY Makers Holiday. All rights reserved.</span>
+  <a href="index.html" style="color:rgba(255,255,255,.7);">Back to Home</a>
+</div></div></footer>
+<script src="js/main.js"></script>
+<script>document.getElementById("tos-date").textContent = new Date().toLocaleDateString("en-IN",{day:"numeric",month:"long",year:"numeric"});</script>
+</body>
+</html>
